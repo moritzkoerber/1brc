@@ -3,8 +3,6 @@ import sys
 
 import polars as pl
 
-OUTPUT_FILE = "output_polars.txt"
-
 try:
     _, path = sys.argv
 except ValueError:
@@ -42,5 +40,5 @@ print(
         .collect()["formatted"]
         .to_list()
     )
-    + "}\n"
+    + "}"
 )

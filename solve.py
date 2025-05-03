@@ -5,8 +5,6 @@ from collections import defaultdict
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from gc import disable, enable
 
-OUTPUT_FILE = "output.txt"
-
 
 def calculate_chunk_offsets(path: str, n_chunks: int) -> list[tuple[int, int]]:
     offsets = []
@@ -95,7 +93,7 @@ def main():
                     )
                 )
             )
-        }}}\n"
+        }}}"
     )
 
 
